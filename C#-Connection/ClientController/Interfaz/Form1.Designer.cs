@@ -36,10 +36,10 @@
             this.pull_btn = new System.Windows.Forms.Button();
             this.ip_lbl = new System.Windows.Forms.Label();
             this.port_lbl = new System.Windows.Forms.Label();
-            this.connect_btn = new System.Windows.Forms.Button();
+            this.init_btn = new System.Windows.Forms.Button();
             this.ip_txt = new System.Windows.Forms.TextBox();
             this.port_txt = new System.Windows.Forms.TextBox();
-            this.disconnect_btn = new System.Windows.Forms.Button();
+            this.reset_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // up_btn
@@ -126,15 +126,15 @@
             this.port_lbl.TabIndex = 7;
             this.port_lbl.Text = "Port";
             // 
-            // connect_btn
+            // init_btn
             // 
-            this.connect_btn.Location = new System.Drawing.Point(336, 39);
-            this.connect_btn.Name = "connect_btn";
-            this.connect_btn.Size = new System.Drawing.Size(75, 23);
-            this.connect_btn.TabIndex = 8;
-            this.connect_btn.Text = "Connect";
-            this.connect_btn.UseVisualStyleBackColor = true;
-            this.connect_btn.Click += new System.EventHandler(this.connect_btn_Click);
+            this.init_btn.Location = new System.Drawing.Point(336, 39);
+            this.init_btn.Name = "init_btn";
+            this.init_btn.Size = new System.Drawing.Size(75, 23);
+            this.init_btn.TabIndex = 8;
+            this.init_btn.Text = "Initialize";
+            this.init_btn.UseVisualStyleBackColor = true;
+            this.init_btn.Click += new System.EventHandler(this.init_btn_Click);
             // 
             // ip_txt
             // 
@@ -150,26 +150,26 @@
             this.port_txt.Size = new System.Drawing.Size(100, 20);
             this.port_txt.TabIndex = 10;
             // 
-            // disconnect_btn
+            // reset_btn
             // 
-            this.disconnect_btn.Enabled = false;
-            this.disconnect_btn.Location = new System.Drawing.Point(220, 274);
-            this.disconnect_btn.Name = "disconnect_btn";
-            this.disconnect_btn.Size = new System.Drawing.Size(95, 29);
-            this.disconnect_btn.TabIndex = 11;
-            this.disconnect_btn.Text = "Disconnect";
-            this.disconnect_btn.UseVisualStyleBackColor = true;
-            this.disconnect_btn.Click += new System.EventHandler(this.disconnect_btn_Click);
+            this.reset_btn.Enabled = false;
+            this.reset_btn.Location = new System.Drawing.Point(220, 274);
+            this.reset_btn.Name = "reset_btn";
+            this.reset_btn.Size = new System.Drawing.Size(116, 29);
+            this.reset_btn.TabIndex = 11;
+            this.reset_btn.Text = "Reset Connection";
+            this.reset_btn.UseVisualStyleBackColor = true;
+            this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 324);
-            this.Controls.Add(this.disconnect_btn);
+            this.Controls.Add(this.reset_btn);
             this.Controls.Add(this.port_txt);
             this.Controls.Add(this.ip_txt);
-            this.Controls.Add(this.connect_btn);
+            this.Controls.Add(this.init_btn);
             this.Controls.Add(this.port_lbl);
             this.Controls.Add(this.ip_lbl);
             this.Controls.Add(this.pull_btn);
@@ -195,10 +195,10 @@
         private System.Windows.Forms.Button pull_btn;
         private System.Windows.Forms.Label ip_lbl;
         private System.Windows.Forms.Label port_lbl;
-        private System.Windows.Forms.Button connect_btn;
+        private System.Windows.Forms.Button init_btn;
         private System.Windows.Forms.TextBox ip_txt;
         private System.Windows.Forms.TextBox port_txt;
-        private System.Windows.Forms.Button disconnect_btn;
+        private System.Windows.Forms.Button reset_btn;
     }
 }
 

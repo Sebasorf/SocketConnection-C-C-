@@ -14,11 +14,11 @@ namespace UI
 {
     public partial class Form1 : Form
     {
-        Client emotiv;
+        Client e_client;
         public Form1()
         {
             InitializeComponent();
-            this.disconnect_btn.Enabled = false;
+            this.reset_btn.Enabled = false;
             this.up_btn.Enabled = false;
             this.down_btn.Enabled = false;
             this.right_btn.Enabled = false;
@@ -27,15 +27,18 @@ namespace UI
             this.push_btn.Enabled = false;
         }
 
-        private void connect_btn_Click(object sender, EventArgs e)
+        private void init_btn_Click(object sender, EventArgs e)
         {
-            emotiv = new Client(this.ip_txt.Text.Trim(), int.Parse(this.port_txt.Text.Trim()) );
             try
             {
+                if (this.ip_txt.Text.Trim().Length == 0 && this.port_txt.Text.Trim().Length == 0)
+                    e_client = new Client();
+                else
+                    e_client = new Client(this.ip_txt.Text.Trim(), int.Parse(this.port_txt.Text.Trim()) );
                 this.ip_txt.Enabled = false;
                 this.port_txt.Enabled = false;
-                this.connect_btn.Enabled = false;
-                this.disconnect_btn.Enabled = true;
+                this.init_btn.Enabled = false;
+                this.reset_btn.Enabled = true;
                 this.up_btn.Enabled = true;
                 this.down_btn.Enabled = true;
                 this.right_btn.Enabled = true;
@@ -43,9 +46,9 @@ namespace UI
                 this.pull_btn.Enabled = true;
                 this.push_btn.Enabled = true;
             }
-            catch(ServerInitializeException ex)
+            catch (InitializeConnectionException ice)
             {
-                MessageBox.Show(ex.Message, "Server Initialize Error");
+                MessageBox.Show(ice.Message, "Server Initialize Error");
             }
         }
 
@@ -53,11 +56,11 @@ namespace UI
         {
             try
             {
-                this.emotiv.SendCommand("u"); //Up
+                this.e_client.SendCommand("u"); //Up
             }
-            catch (MessageSenderException ex)
+            catch (MessageSenderException ms)
             {
-                MessageBox.Show(ex.Message, "Sending Command to Server Error");
+                MessageBox.Show(ms.Message, "Sending Command to Server Error");
             }
         }
 
@@ -65,11 +68,11 @@ namespace UI
         {
             try
             {
-                this.emotiv.SendCommand("l"); //Left
+                this.e_client.SendCommand("l"); //Left
             }
-            catch (MessageSenderException ex)
+            catch (MessageSenderException ms)
             {
-                MessageBox.Show(ex.Message, "Sending Command to Server Error");
+                MessageBox.Show(ms.Message, "Sending Command to Server Error");
             }
         }
 
@@ -77,11 +80,11 @@ namespace UI
         {
             try
             {
-                this.emotiv.SendCommand("r"); //Right
+                this.e_client.SendCommand("r"); //Right
             }
-            catch (MessageSenderException ex)
+            catch (MessageSenderException ms)
             {
-                MessageBox.Show(ex.Message, "Sending Command to Server Error");
+                MessageBox.Show(ms.Message, "Sending Command to Server Error");
             }
         }
 
@@ -89,11 +92,11 @@ namespace UI
         {
             try
             {
-                this.emotiv.SendCommand("d"); //Down
+                this.e_client.SendCommand("d"); //Down
             }
-            catch (MessageSenderException ex)
+            catch (MessageSenderException ms)
             {
-                MessageBox.Show(ex.Message, "Sending Command to Server Error");
+                MessageBox.Show(ms.Message, "Sending Command to Server Error");
             }
         }
 
@@ -101,11 +104,11 @@ namespace UI
         {
             try
             {
-                this.emotiv.SendCommand("p"); //Pull
+                this.e_client.SendCommand("p"); //Pull
             }
-            catch (MessageSenderException ex)
+            catch (MessageSenderException ms)
             {
-                MessageBox.Show(ex.Message, "Sending Command to Server Error");
+                MessageBox.Show(ms.Message, "Sending Command to Server Error");
             }
         }
 
@@ -113,34 +116,27 @@ namespace UI
         {
             try
             {
-                this.emotiv.SendCommand("h"); //Push
+                this.e_client.SendCommand("h"); //Push
             }
-            catch (MessageSenderException ex)
+            catch (MessageSenderException ms)
             {
-                MessageBox.Show(ex.Message, "Sending Command to Server Error");
+                MessageBox.Show(ms.Message, "Sending Command to Server Error");
             }
         }
 
-        private void disconnect_btn_Click(object sender, EventArgs e)
+        private void reset_btn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                emotiv.ResetConfig();
-                this.ip_txt.Enabled = true;
-                this.port_txt.Enabled = true;
-                this.connect_btn.Enabled = true;
-                this.disconnect_btn.Enabled = false;
-                this.up_btn.Enabled = false;
-                this.down_btn.Enabled = false;
-                this.right_btn.Enabled = false;
-                this.left_btn.Enabled = false;
-                this.pull_btn.Enabled = false;
-                this.push_btn.Enabled = false;
-            }
-            catch (ServerDisconnectException ex)
-            {
-                MessageBox.Show(ex.Message, "Server Disconnect Error");
-            }
+            e_client.ResetConfig();
+            this.ip_txt.Enabled = true;
+            this.port_txt.Enabled = true;
+            this.init_btn.Enabled = true;
+            this.reset_btn.Enabled = false;
+            this.up_btn.Enabled = false;
+            this.down_btn.Enabled = false;
+            this.right_btn.Enabled = false;
+            this.left_btn.Enabled = false;
+            this.pull_btn.Enabled = false;
+            this.push_btn.Enabled = false;
         }
     }
 }

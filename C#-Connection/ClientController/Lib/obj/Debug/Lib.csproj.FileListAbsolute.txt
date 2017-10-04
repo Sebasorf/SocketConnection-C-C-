@@ -12,3 +12,10 @@ C:\Users\Personal\Documents\Visual Studio 2013\Projects\EmotivClientController\L
 C:\Users\Personal\Documents\Visual Studio 2013\Projects\EmotivClientController\Lib\obj\Debug\Lib.csprojResolveAssemblyReference.cache
 C:\Users\Personal\Documents\Visual Studio 2013\Projects\EmotivClientController\Lib\obj\Debug\Lib.dll
 C:\Users\Personal\Documents\Visual Studio 2013\Projects\EmotivClientController\Lib\obj\Debug\Lib.pdb
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Lib\bin\Debug\Lib.dll
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Lib\bin\Debug\Lib.pdb
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Lib\bin\Debug\Exceptions.dll
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Lib\bin\Debug\Exceptions.pdb
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Lib\obj\Debug\Lib.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Lib\obj\Debug\Lib.dll
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Lib\obj\Debug\Lib.pdb

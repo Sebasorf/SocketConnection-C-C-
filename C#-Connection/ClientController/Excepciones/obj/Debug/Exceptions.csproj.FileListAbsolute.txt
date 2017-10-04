@@ -3,3 +3,8 @@ C:\Users\Personal\Documents\Visual Studio 2013\Projects\EmotivClientController\E
 C:\Users\Personal\Documents\Visual Studio 2013\Projects\EmotivClientController\EmotivClientController\Excepciones\bin\Debug\Exceptions.pdb
 C:\Users\Personal\Documents\Visual Studio 2013\Projects\EmotivClientController\EmotivClientController\Excepciones\obj\Debug\Exceptions.dll
 C:\Users\Personal\Documents\Visual Studio 2013\Projects\EmotivClientController\EmotivClientController\Excepciones\obj\Debug\Exceptions.pdb
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Excepciones\bin\Debug\Exceptions.dll
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Excepciones\bin\Debug\Exceptions.pdb
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Excepciones\obj\Debug\Exceptions.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Excepciones\obj\Debug\Exceptions.dll
+C:\Users\Personal\Documents\GitHub\SocketConnection-C-CSharp\C#-Connection\ClientController\Excepciones\obj\Debug\Exceptions.pdb

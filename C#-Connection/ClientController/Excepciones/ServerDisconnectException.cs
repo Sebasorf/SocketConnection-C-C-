@@ -9,7 +9,7 @@ namespace Exceptions
     public class ServerDisconnectException : Exception
     {
         public ServerDisconnectException(String IP, int port)
-            : base("Could not connect to Server at " + IP + ":" + port + ".")
+            : base("Could not disconnect to Server at " + IP + ":" + port + ".")
         {
         }
     }
