@@ -1,8 +1,0 @@
-c:\users\personal\documents\visual studio 2017\Projects\EmotivClientController\Libs\bin\Debug\netstandard1.4\Libs.deps.json
-c:\users\personal\documents\visual studio 2017\Projects\EmotivClientController\Libs\bin\Debug\netstandard1.4\Libs.dll
-c:\users\personal\documents\visual studio 2017\Projects\EmotivClientController\Libs\bin\Debug\netstandard1.4\Libs.pdb
-c:\users\personal\documents\visual studio 2017\Projects\EmotivClientController\Libs\obj\Debug\netstandard1.4\Libs.csprojResolveAssemblyReference.cache
-c:\users\personal\documents\visual studio 2017\Projects\EmotivClientController\Libs\obj\Debug\netstandard1.4\Libs.csproj.CoreCompileInputs.cache
-c:\users\personal\documents\visual studio 2017\Projects\EmotivClientController\Libs\obj\Debug\netstandard1.4\Libs.AssemblyInfo.cs
-c:\users\personal\documents\visual studio 2017\Projects\EmotivClientController\Libs\obj\Debug\netstandard1.4\Libs.dll
-c:\users\personal\documents\visual studio 2017\Projects\EmotivClientController\Libs\obj\Debug\netstandard1.4\Libs.pdb
